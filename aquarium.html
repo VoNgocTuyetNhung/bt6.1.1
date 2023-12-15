@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aquarium.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="musicButton" class="btn_change" onclick="toggleMusic()">
+		<h3>Đổi nhạc</h3>
+	</button>
+	<div id="musicOptions" style="display: none">
+		<ul id="musicList">
+			<li>
+				<button class="btn_change" onclick="playMusic('Music/bongbongbangbang.mp3')">
+					<h4>Nhạc 1</h4>
+				</button>
+			</li>
+			<li>
+				<button class="btn_change" onclick="playMusic('Music/cavangboi.mp3')">
+					<h4>Nhạc 2</h4>
+				</button>
+			</li>
+		</ul>
+	</div>
+
+    <div id="container" style="display: none;">
+		<audio id="audio" controls autoplay>
+			<source id="audioSource" src="Music/bongbongbangbang.mp3" />
+		</audio>
+	</div>
+
+    <div id="background_image">
+		<img id="backgroundImage" src="image/bg.jpg" alt="Background" />
+	</div>
+
+    <button id="settingsButton" class="btn_change" onclick="toggleSettings()">
+		<h3>Đổi nền</h3>
+	</button>
+
+	<div id="backgroundOptions" style="display: none">
+		<ul id="backgroundList">
+		  <li>
+			<button class="btn_change" onclick="changeBackground(0)">
+			  <h4>Nền 1</h4>
+			</button>
+		  </li>
+		  <li>
+			<button class="btn_change" onclick="changeBackground(1)">
+			  <h4>Nền 2</h4>
+			</button>
+		  </li>
+		</ul>
+	</div>
+
+	<div id="botnuoc" class="bnc"><img src="image/botnuoc.gif" alt="Bọt nước"></div>
+	<div id="botnuoc2" class="bnc"><img src="image/botnuoc.gif" alt="Bọt nước2"></div>
+	<div id="botnuoc3" class="bnc"><img src="image/botnuoc.gif" alt="Bọt nước3"></div>
+	<div id="botnuoc4" class="bnc"><img src="image/botnuoc.gif" alt="Bọt nước4"></div>
+
+	<div id="ca1"><img src="image/ca3.gif" alt="Cá 1"></div>
+	<div id="ca21"><img src="image/ca2.gif" alt="Cá 21"></div>
+	<div id="ca22"><img src="image/ca1.gif" alt="Cá 22"></div>
+	<div id="ca23"><img src="image/ca1.gif" alt="Cá 23"></div>
+	<div id="ca24"><img src="image/ca1.gif" alt="Cá 24"></div>
+	<div id="ca25"><img src="image/ca5.gif" alt="Cá 25"></div>
+
+	<div id="ngoctrai" ><img src="image/ngoctrai2.gif" alt=""></div>
+
+	<div id="bachtuot" ><img src="image/bachtuot.gif" alt=""></div>
+
+	<div id="sua1" class="sua"><img src="image/sứa.gif" alt="Sứa1"></div>
+
+	<div id="sanho"><img src="image/sanho.gif" alt="San hô"></div>
+	<div id="sanho1"><img src="image/sanho.gif" alt="San hô"></div>
+	<div id="sanho2"><img src="image/sanho.gif" alt="San hô"></div>
+	<div id="sanho3"><img src="image/sanho2.gif" alt="San hô"></div>
+	<div id="sanho4"><img src="image/sanho2.gif" alt="San hô"></div>
+
+	<div id="rong11" class="rong"><img src="image/rong1.gif" alt="Rong11"></div>
+	<div id="rong12" class="rong"><img src="image/rong1.gif" alt="Rong11"></div>
+	<div id="rong2" class="rong"><img src="image/rong2.gif" alt="Rong2"></div>
+
+<script src="aquarium.js"></script>
+</body>
+</html>
